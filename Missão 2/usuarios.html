@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.js"></script>
+        <title>Usuarios</title>
+    </head>
+
+    <body class="container bg-warning">
+
+        <h1>Usuários de Teste via REST</h1>
+        <p>Para obter os dados de teste, acesse: <a href="https://reqres.in/" target="_blank">reqres.in</a></p>
+
+        <div id="usuarios" class="container-fluid">
+            <div class="row">
+                <div class="col-4" v-for="(user, index) in users" :key="index">
+                    <div class="card p-2 m-3">
+                        <img :src="user.avatar" class="card-img-top" alt="Avatar do usuário">
+                        <div class="card-body">
+                            <h5 class="card-title">{{user.first_name}} {{user.last_name}}</h5>
+                            <p class="card-text">{{user.email}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </body>
+
+    <script src="js/usuarios.js"></script>
+      
+</html>

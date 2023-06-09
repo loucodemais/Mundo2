@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="js/ordenando.js"></script>
+    <link rel="stylesheet" href="css/global.css">
+
+    <title>Ordenando</title>
+
+</head>
+<body>
+    
+    <main class="container-fluid w-75">
+
+        <h2>Ordenando Valores</h2>
+
+        <div class="form-row">
+            <div class="form-group col-md-12">
+                <label for="valor">Valor</label>
+                <input required autocomplete="off" class="form-control" type="number" id="valor">
+            </div>
+        </div>
+        <div class="form-row">
+            <button class="btn btn-primary col-md-2" onclick="add()">Adicionar</button>
+        </div>
+        <hr>
+        <div class="form-row">
+            <div class="form-group col-md-12">
+                <select class="form-control" id="selecao">
+                    <option value="0">Bubble Sort</option>
+                    <option value="1">Selection Sort</option>
+                    <option value="2">Quick Sort</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row">
+            <button class="btn btn-primary col-md-2" onclick="ordenar()">Ordenar</button>
+            <button class="btn btn-primary col-md-2" onclick="misturar()" style="margin-left: 20px;">Misturar</button>
+        </div>
+        <hr>
+        <ul id="valores">
+
+        </ul>
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+body, html{
+    overflow: hidden;
+}
+
+main div div{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+h2{
+    font-weight: bolder;
+    text-align: center;
+    line-height: 50px;
+}
+
+h4{
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+main{
+    align-items: center;
+    justify-content: center;
+}

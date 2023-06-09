@@ -1,0 +1,9 @@
+main{
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    width: 90%;
+    max-width: 900px;
+}

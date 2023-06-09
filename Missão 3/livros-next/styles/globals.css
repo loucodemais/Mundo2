@@ -1,0 +1,23 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+}
+
+.list-inline{
+    margin: 0;
+    padding-left: 20px !important;
+    color: #fff;
+}
+
+.list-inline-item{
+    padding: 5px;
+}
+
+.nav-link{
+    color: #fff !important;
+}
+
+.nav-link:hover{
+    color: #724bff !important;
+}

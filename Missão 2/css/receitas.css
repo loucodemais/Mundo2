@@ -1,0 +1,11 @@
+.flex-wrap{
+    height: fit-content;
+    width: fit-content;
+    padding: 30px;
+    gap: 20px;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+}
